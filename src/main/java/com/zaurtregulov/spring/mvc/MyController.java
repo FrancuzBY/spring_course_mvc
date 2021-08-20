@@ -20,10 +20,6 @@ public class MyController {
     @RequestMapping("/askDetails")
     public String askEmployeeDetails(Model model) {
 
-//        Employee emp = new Employee();
-//        emp.setName("Ivan");
-//        emp.setSurname("Petrov");
-//        emp.setSalary(500);
         model.addAttribute("employee", new Employee());
         return "ask-emp-details-view";
     }
